@@ -4,6 +4,9 @@
 ohe = OneHotEncoder ()
 X_encoded = ohe.fit_transform(data[['Fuel Type']]).toarray()
 data['Fuel Type'] = X_encoded
+- drugi nacin:- X['Sex'].replace({'male' : 0,
+                        'female' : 1
+                        }, inplace = True)
 
 Za računala na labosima:
 pip install (-U) numpy --user
